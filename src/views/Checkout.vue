@@ -2,8 +2,7 @@
     <div class="bm-checkout bm-flex layout-column ai-center jc-center">
         <h1>Your cart</h1>
         <div class="d-flex cart-container">
-            <el-table
-                    :data="cart.items">
+            <el-table :data="cart.items" empty-text="No items in your cart">
                 <el-table-column
                         prop="image">
                     <template slot-scope="scope">

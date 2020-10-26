@@ -3,7 +3,7 @@
         <h1>Sales Statistics</h1>
         <div class="d-flex table-container">
             <el-input v-model="search" type="text" placeholder="Search rep name"/>
-            <el-table :data="itemsPurchased">
+            <el-table :data="itemsPurchased" empty-text="No orders have been placed">
                 <el-table-column prop="id"
                                  label="Cart id"/>
                 <el-table-column label="Sales rep id"
